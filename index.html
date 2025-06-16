@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SushiHub - The #1 Script Hub for Roblox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white font-poppins">
+
+    <div class="custom-cursor"></div>
+    
+
+    <div class="particles"></div>
+    
+
+    <nav class="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="logo-container">
+                        <img src="https://i.imgur.com/xOcFHWZ.png" alt="SushiHub Logo" class="logo-image">
+                        <div class="brand-text">SushiHub</div>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>
+                    <a href="#features" class="hover:text-blue-400 transition-colors">Features</a>
+                    <a href="#executors" class="hover:text-blue-400 transition-colors">Executors</a>
+                    <a href="#games" class="hover:text-blue-400 transition-colors">Games</a>
+                    <a href="#showcase" class="hover:text-blue-400 transition-colors">Showcase</a>
+                    <a href="#pricing" class="hover:text-blue-400 transition-colors">Pricing</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg font-medium transition-colors">
+                        <i class="fab fa-discord mr-2"></i>Discord
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-400 hover:text-white">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-gray-800">
+            <div class="px-4 py-4 space-y-4">
+                <a href="#home" class="block hover:text-blue-400 transition-colors">Home</a>
+                <a href="#features" class="block hover:text-blue-400 transition-colors">Features</a>
+                <a href="#executors" class="block hover:text-blue-400 transition-colors">Executors</a>
+                <a href="#games" class="block hover:text-blue-400 transition-colors">Games</a>
+                <a href="#showcase" class="block hover:text-blue-400 transition-colors">Showcase</a>
+                <a href="#pricing" class="block hover:text-blue-400 transition-colors">Pricing</a>
+                <a href="#discord" class="block hover:text-blue-400 transition-colors">Discord</a>
+                <a href="#" class="block bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg font-medium transition-colors text-center">
+                    <i class="fab fa-discord mr-2"></i>Discord
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center px-4 relative overflow-hidden pt-20">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight floating">
+                The <span class="text-gradient">#1 Script Hub</span><br>
+                for Roblox
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-8 max-w-2xl mx-auto reveal">
+                No keys, no hassle. Just pure scripting power.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12 reveal">
+                <a href="#pricing" class="btn-primary text-lg px-8 py-4 tilt-card">
+                    <i class="fas fa-rocket mr-2"></i>Get Started
+                </a>
+                <a href="#" class="btn-secondary text-lg px-8 py-4 tilt-card">
+                    <i class="fab fa-discord mr-2"></i>Join Discord
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 reveal">
+                <div class="text-center floating">
+                    <div class="text-3xl font-bold text-blue-500 mb-2">10+</div>
+                    <div class="text-gray-400">Supported Games</div>
+                </div>
+                <div class="text-center floating">
+                    <div class="text-3xl font-bold text-purple-500 mb-2">8+</div>
+                    <div class="text-gray-400">Compatible Executors</div>
+                </div>
+                <div class="text-center floating">
+                    <div class="text-3xl font-bold text-green-500 mb-2">24/7</div>
+                    <div class="text-gray-400">Support Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="features" class="py-20 px-4 bg-gray-900/30">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 reveal">Why <span class="text-gradient">Choose</span> SushiHub</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto reveal">We built this for scripters who want things to just work. No BS, just results.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="gradient-border card-hover tilt-card reveal">
+                    <div class="gradient-border-inner text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mx-auto mb-6 floating">
+                            <i class="fas fa-bolt text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Lightning Fast</h3>
+                        <p class="text-gray-400">Scripts load instantly. No waiting around, no lag. Just click and go.</p>
+                    </div>
+                </div>
+                <div class="gradient-border card-hover tilt-card reveal">
+                    <div class="gradient-border-inner text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-6 floating">
+                            <i class="fas fa-key text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">No Keys Required</h3>
+                        <p class="text-gray-400">Tired of those annoying key systems? We don't use them. Ever.</p>
+                    </div>
+                </div>
+                <div class="gradient-border card-hover tilt-card reveal">
+                    <div class="gradient-border-inner text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mx-auto mb-6 floating">
+                            <i class="fas fa-sync-alt text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Always Updated</h3>
+                        <p class="text-gray-400">Scripts update automatically. You'll always have the latest features without lifting a finger.</p>
+                    </div>
+                </div>
+                <div class="gradient-border card-hover tilt-card reveal">
+                    <div class="gradient-border-inner text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mx-auto mb-6 floating">
+                            <i class="fas fa-shield-alt text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Clean Interface</h3>
+                        <p class="text-gray-400">Simple design that doesn't get in your way. Easy for beginners, powerful for pros.</p>
+                    </div>
+                </div>
+                <div class="gradient-border card-hover tilt-card reveal">
+                    <div class="gradient-border-inner text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-500 rounded-xl flex items-center justify-center mx-auto mb-6 floating">
+                            <i class="fas fa-users text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Real Support</h3>
+                        <p class="text-gray-400">Actual humans helping you 24/7. No bots, no automated responses.</p>
+                    </div>
+                </div>
+                <div class="gradient-border card-hover tilt-card reveal">
+                    <div class="gradient-border-inner text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-xl flex items-center justify-center mx-auto mb-6 floating">
+                            <i class="fas fa-cloud text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Cloud Backup</h3>
+                        <p class="text-gray-400">Your settings follow you everywhere. Switch devices without losing anything.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="executors" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 reveal">Works With Your <span class="text-gradient">Executor</span></h2>
+                <p class="text-xl text-gray-400 reveal">We support pretty much every executor out there</p>
+            </div>
+            <div class="advanced-grid">
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mb-4 image-placeholder floating-small">
+                        <i class="fas fa-code text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Wave</h3>
+                    <div class="flex items-center mb-2">
+                        <div class="w-full bg-gray-700 rounded-full h-2 mr-3">
+                            <div class="bg-green-500 h-2 rounded-full progress-bar" style="width: 100%"></div>
+                        </div>
+                        <span class="text-green-500 text-sm font-semibold">100%</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Full compatibility</p>
+                </div>
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center mb-4 image-placeholder floating-small">
+                        <i class="fas fa-terminal text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Awp</h3>
+                    <div class="flex items-center mb-2">
+                        <div class="w-full bg-gray-700 rounded-full h-2 mr-3">
+                            <div class="bg-green-500 h-2 rounded-full progress-bar" style="width: 100%"></div>
+                        </div>
+                        <span class="text-green-500 text-sm font-semibold">100%</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Full compatibility</p>
+                </div>
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center mb-4 image-placeholder floating-small">
+                        <i class="fas fa-bolt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Swift</h3>
+                    <div class="flex items-center mb-2">
+                        <div class="w-full bg-gray-700 rounded-full h-2 mr-3">
+                            <div class="bg-green-500 h-2 rounded-full progress-bar" style="width: 98%"></div>
+                        </div>
+                        <span class="text-green-500 text-sm font-semibold">95%</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Excellent compatibility</p>
+                </div>
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 image-placeholder floating-small">
+                        <i class="fas fa-mobile-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Mobile Executors</h3>
+                    <div class="flex items-center mb-2">
+                        <div class="w-full bg-gray-700 rounded-full h-2 mr-3">
+                            <div class="bg-green-500 h-2 rounded-full progress-bar" style="width: 95%"></div>
+                        </div>
+                        <span class="text-green-500 text-sm font-semibold">90%</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Mobile support</p>
+                </div>
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center mb-4 image-placeholder floating-small">
+                        <i class="fas fa-rocket text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Velocity</h3>
+                    <div class="flex items-center mb-2">
+                        <div class="w-full bg-gray-700 rounded-full h-2 mr-3">
+                            <div class="bg-yellow-500 h-2 rounded-full progress-bar" style="width: 89%"></div>
+                        </div>
+                        <span class="text-yellow-500 text-sm font-semibold">80%</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Good compatibility</p>
+                </div>
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center mb-4 image-placeholder floating">
+                        <i class="fas fa-cog text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Ronix</h3>
+                    <div class="flex items-center mb-2">
+                        <div class="w-full bg-gray-700 rounded-full h-2 mr-3">
+                            <div class="bg-yellow-500 h-2 rounded-full progress-bar" style="width: 85%"></div>
+                        </div>
+                        <span class="text-yellow-500 text-sm font-semibold">80%</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Good compatibility</p>
+                </div>
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-green-600 rounded-lg flex items-center justify-center mb-4 image-placeholder floating">
+                        <i class="fas fa-atom text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Xeno</h3>
+                    <div class="flex items-center mb-2">
+                        <div class="w-full bg-gray-700 rounded-full h-2 mr-3">
+                            <div class="bg-orange-500 h-2 rounded-full progress-bar" style="width: 75%"></div>
+                        </div>
+                        <span class="text-orange-500 text-sm font-semibold">70%</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Nice compatibility</p>
+                </div>
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-lg flex items-center justify-center mb-4 image-placeholder floating">
+                        <i class="fas fa-sun text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Solara</h3>
+                    <div class="flex items-center mb-2">
+                        <div class="w-full bg-gray-700 rounded-full h-2 mr-3">
+                            <div class="bg-orange-500 h-2 rounded-full progress-bar" style="width: 75%"></div>
+                        </div>
+                        <span class="text-orange-500 text-sm font-semibold">70%</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Nice compatibility</p>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <p class="text-gray-400 reveal">And many more executors! Test yours to see compatibility.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="games" class="py-20 px-4 bg-gray-900/30">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 reveal">Games We <span class="text-gradient">Support</span> </h2>
+                <p class="text-xl text-gray-400 reveal">Scripts for all the games you actually play</p>
+            </div>
+
+            <div class="search-container reveal">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <input type="text" id="gameSearch" class="search-input" placeholder="Search games...">
+            </div>
+            <div class="advanced-grid">
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal game-card" data-category="sports">
+                    <div class="w-full h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center image-placeholder floating-small">
+                        <i class="fas fa-volleyball-ball text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Beyond Volleyball League</h3>
+                    <p class="text-gray-400 text-sm mb-3">Advanced volleyball gameplay scripts</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-blue-500 text-sm font-semibold">5+ Features</span>
+                        <span class="bg-green-500 text-black px-2 py-1 rounded text-xs font-semibold">Active</span>
+                    </div>
+                </div>
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal game-card" data-category="sports">
+                    <div class="w-full h-32 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg mb-4 flex items-center justify-center image-placeholder floating">
+                        <i class="fas fa-trophy text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Volleyball Legends</h3>
+                    <p class="text-gray-400 text-sm mb-3">Legendary volleyball experience</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-blue-500 text-sm font-semibold">6+ Features</span>
+                        <span class="bg-green-500 text-black px-2 py-1 rounded text-xs font-semibold">Active</span>
+                    </div>
+                </div>
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal game-card" data-category="sports">
+                    <div class="w-full h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg mb-4 flex items-center justify-center image-placeholder floating">
+                        <i class="fas fa-chart-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Spiked</h3>
+                    <p class="text-gray-400 text-sm mb-3">Competitive volleyball action</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-blue-500 text-sm font-semibold">5+ Features</span>
+                        <span class="bg-green-500 text-black px-2 py-1 rounded text-xs font-semibold">Active</span>
+                    </div>
+                </div>
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal game-card" data-category="puzzle">
+                    <div class="w-full h-32 bg-gradient-to-br from-red-500 to-orange-600 rounded-lg mb-4 flex items-center justify-center image-placeholder floating">
+                        <i class="fas fa-lock text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Locked</h3>
+                    <p class="text-gray-400 text-sm mb-3">Football game.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-blue-500 text-sm font-semibold">5+ Features</span>
+                        <span class="bg-green-500 text-black px-2 py-1 rounded text-xs font-semibold">Active</span>
+                    </div>
+                </div>
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal game-card" data-category="sports">
+                    <div class="w-full h-32 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg mb-4 flex items-center justify-center image-placeholder floating">
+                        <i class="fas fa-users text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Blue Lock Rivals</h3>
+                    <p class="text-gray-400 text-sm mb-3">Soccer competition scripts</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-blue-500 text-sm font-semibold">5+ Features</span>
+                        <span class="bg-green-500 text-black px-2 py-1 rounded text-xs font-semibold">Active</span>
+                    </div>
+                </div>
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal game-card" data-category="combat">
+                    <div class="w-full h-32 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-lg mb-4 flex items-center justify-center image-placeholder floating">
+                        <i class="fas fa-fist-raised text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Combat Warriors</h3>
+                    <p class="text-gray-400 text-sm mb-3">Intense combat gameplay</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-blue-500 text-sm font-semibold">5+ Features</span>
+                        <span class="bg-green-500 text-black px-2 py-1 rounded text-xs font-semibold">Active</span>
+                    </div>
+                </div>
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal game-card" data-category="simulation">
+                    <div class="w-full h-32 bg-gradient-to-br from-teal-500 to-green-600 rounded-lg mb-4 flex items-center justify-center image-placeholder floating">
+                        <i class="fas fa-fish text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Fisch</h3>
+                    <p class="text-gray-400 text-sm mb-3">Fishing simulation adventure</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-blue-500 text-sm font-semibold">5+ Features</span>
+                        <span class="bg-green-500 text-black px-2 py-1 rounded text-xs font-semibold">Active</span>
+                    </div>
+                </div>
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal game-card" data-category="sports">
+                    <div class="w-full h-32 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center image-placeholder floating">
+                        <i class="fas fa-basketball-ball text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Highschool Hoops</h3>
+                    <p class="text-gray-400 text-sm mb-3">Basketball simulation game</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-blue-500 text-sm font-semibold">5+ Features</span>
+                        <span class="bg-green-500 text-black px-2 py-1 rounded text-xs font-semibold">Active</span>
+                    </div>
+                </div>
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal game-card" data-category="sports">
+                    <div class="w-full h-32 bg-gradient-to-br from-pink-500 to-red-600 rounded-lg mb-4 flex items-center justify-center image-placeholder floating">
+                        <i class="fas fa-basketball-ball text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Basketball Zero</h3>
+                    <p class="text-gray-400 text-sm mb-3">Street basketball action</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-blue-500 text-sm font-semibold">5+ Features</span>
+                        <span class="bg-green-500 text-black px-2 py-1 rounded text-xs font-semibold">Active</span>
+                    </div>
+                </div>
+                <div class="glass-effect p-6 rounded-xl card-hover tilt-card reveal game-card" data-category="sports">
+                    <div class="w-full h-32 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg mb-4 flex items-center justify-center image-placeholder floating">
+                        <i class="fas fa-arrow-up text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Volleyball Evolution</h3>
+                    <p class="text-gray-400 text-sm mb-3">Next-gen volleyball experience</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-blue-500 text-sm font-semibold">5+ Features</span>
+                        <span class="bg-green-500 text-black px-2 py-1 rounded text-xs font-semibold">Active</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 reveal">Choose Your <span class="text-gradient">Plan</span></h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto reveal">Multiple payment options available for your convenience</p>
+            </div>
+
+            <div class="flex justify-center mb-12 reveal">
+                <div class="glass-effect rounded-xl p-2">
+                    <div class="flex space-x-2">
+                        <button class="currency-tab active px-6 py-3 rounded-lg font-semibold transition-all" data-currency="robux">
+                            <i class="fas fa-coins mr-2"></i>Robux
+                        </button>
+                        <button class="currency-tab px-6 py-3 rounded-lg font-semibold transition-all" data-currency="brl">
+                            <i class="fas fa-dollar-sign mr-2"></i>BRL (Pix)
+                        </button>
+                        <button class="currency-tab px-6 py-3 rounded-lg font-semibold transition-all" data-currency="usd">
+                            <i class="fab fa-paypal mr-2"></i>USD (PayPal)
+                        </button>
+                        <button class="currency-tab px-6 py-3 rounded-lg font-semibold transition-all" data-currency="boost">
+                            <i class="fas fa-rocket mr-2"></i>Discord Boost
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pricing-grid">
+
+                <div class="pricing-card gradient-border card-hover tilt-card reveal">
+                    <div class="gradient-border-inner text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-6 floating">
+                            <i class="fas fa-calendar-week text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Weekly</h3>
+                        <div class="pricing-content">
+                            <div class="currency-pricing robux">
+                                <div class="text-3xl font-bold text-gradient mb-2">500 Robux</div>
+                                <p class="text-gray-400 mb-6">7 days access</p>
+                            </div>
+                            <div class="currency-pricing brl hidden">
+                                <div class="text-3xl font-bold text-gradient mb-2">R$ 6</div>
+                                <p class="text-gray-400 mb-6">7 days access</p>
+                            </div>
+                            <div class="currency-pricing usd hidden">
+                                <div class="text-3xl font-bold text-gradient mb-2">$1.75</div>
+                                <p class="text-gray-400 mb-6">7 days access</p>
+                            </div>
+                            <div class="currency-pricing boost hidden">
+                                <div class="text-3xl font-bold text-gradient mb-2">1 Boost</div>
+                                <p class="text-gray-400 mb-6">7 days access</p>
+                            </div>
+                        </div>
+                        <div class="features-list">
+                            <ul class="space-y-3 mb-8 text-left">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>All supported games</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Premium scripts</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Discord support</li>
+                            </ul>
+                            <button onclick="openPurchaseModal('weekly')" class="btn-primary w-full">
+                                <i class="fas fa-shopping-cart mr-2"></i>Purchase Weekly
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-card gradient-border card-hover tilt-card reveal">
+                    <div class="gradient-border-inner text-center relative">
+                        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                            <span class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold floating">
+                                Most Popular 
+                            </span>
+                        </div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 mt-4 floating">
+                            <i class="fas fa-calendar-alt text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Monthly</h3>
+                        <div class="pricing-content">
+                            <div class="currency-pricing robux">
+                                <div class="text-3xl font-bold text-gradient mb-2">700 Robux</div>
+                                <p class="text-gray-400 mb-6">30 days access</p>
+                            </div>
+                            <div class="currency-pricing brl hidden">
+                                <div class="text-3xl font-bold text-gradient mb-2">R$ 10</div>
+                                <p class="text-gray-400 mb-6">30 days access</p>
+                            </div>
+                            <div class="currency-pricing usd hidden">
+                                <div class="text-3xl font-bold text-gradient mb-2">$3.00</div>
+                                <p class="text-gray-400 mb-6">30 days access</p>
+                            </div>
+                            <div class="currency-pricing boost hidden">
+                                <div class="text-3xl font-bold text-gradient mb-2">2 Boosts</div>
+                                <p class="text-gray-400 mb-6">30 days access</p>
+                            </div>
+                        </div>
+                        <div class="features-list">
+                            <ul class="space-y-3 mb-8 text-left">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>All supported games</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Premium scripts</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Discord support</li>
+                            </ul>
+                            <button onclick="openPurchaseModal('monthly')" class="btn-primary w-full">
+                                <i class="fas fa-shopping-cart mr-2"></i>Purchase Monthly
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-card gradient-border card-hover tilt-card reveal">
+                    <div class="gradient-border-inner text-center relative">
+                        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                            <span class="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold floating">
+                                Best Value 💎
+                            </span>
+                        </div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6 mt-4 floating">
+                            <i class="fas fa-infinity text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Lifetime</h3>
+                        <div class="pricing-content">
+                            <div class="currency-pricing robux">
+                                <div class="text-3xl font-bold text-gradient mb-2">900 Robux</div>
+                                <p class="text-gray-400 mb-6">Forever access</p>
+                            </div>
+                            <div class="currency-pricing brl hidden">
+                                <div class="text-3xl font-bold text-gradient mb-2">R$ 12</div>
+                                <p class="text-gray-400 mb-6">Forever access</p>
+                            </div>
+                            <div class="currency-pricing usd hidden">
+                                <div class="text-3xl font-bold text-gradient mb-2">$4.50</div>
+                                <p class="text-gray-400 mb-6">Forever access</p>
+                            </div>
+                            <div class="currency-pricing boost hidden">
+                                <div class="text-3xl font-bold text-gradient mb-2">6 Boosts</div>
+                                <p class="text-gray-400 mb-6">Forever access</p>
+                            </div>
+                        </div>
+                        <div class="features-list">
+                            <ul class="space-y-3 mb-8 text-left">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>All supported games</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Premium scripts</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Discord support</li>
+                            </ul>
+                            <button onclick="openPurchaseModal('lifetime')" class="w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white py-3 px-6 rounded-xl font-semibold transition-all transform hover:scale-105">
+                                <i class="fas fa-gem mr-2"></i>Purchase Lifetime
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-card gradient-border card-hover tilt-card daily-plan hidden reveal">
+                    <div class="gradient-border-inner text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 floating">
+                            <i class="fas fa-calendar-day text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Daily</h3>
+                        <div class="text-3xl font-bold text-gradient mb-2">R$ 4</div>
+                        <p class="text-gray-400 mb-6">24 hours access</p>
+                        <div class="features-list">
+                            <ul class="space-y-3 mb-8 text-left">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>All supported games</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Premium scripts</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Discord support</li>
+                            </ul>
+                            <button onclick="openPurchaseModal('daily')" class="btn-primary w-full">
+                                <i class="fas fa-shopping-cart mr-2"></i>Purchase Daily
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="purchaseModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Complete Your Purchase</h2>
+                <button class="modal-close" onclick="closePurchaseModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="modalBody">
+            </div>
+        </div>
+    </div>
+
+    <section id="showcase" class="py-20 px-4 bg-gray-900/30">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 reveal">Check Out Our <span class="text-gradient">Scripts</span> 🚀</h2>
+                <p class="text-xl text-gray-400 reveal">See what SushiHub can do with these script demos</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-effect p-8 rounded-xl card-hover tilt-card reveal">
+                    <img src="https://i.imgur.com/4O3FoU6.jpeg" alt="Locked Script" class="w-full h-48 rounded-lg mb-6 object-cover floating-small">
+                    <h3 class="text-xl font-semibold mb-3">Locked Script</h3>
+                    <p class="text-gray-400 mb-4">The ultimate football script for Locked.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-blue-500 font-semibold">Premium</span>
+                        <span class="bg-green-500 text-black px-3 py-1 rounded-full text-sm font-semibold">Updated</span>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=wT_yJRm8Z8k" target="_blank" class="watch-btn w-full">
+                        <i class="fas fa-play"></i>
+                        Watch Showcase
+                    </a>
+                </div>
+                <div class="glass-effect p-8 rounded-xl card-hover tilt-card reveal">
+                    <img src="https://i.imgur.com/UgIEmR5.jpeg" alt="Spiked Script" class="w-full h-48 rounded-lg mb-6 object-cover floating-small">
+                    <h3 class="text-xl font-semibold mb-3">Spiked Script</h3>
+                    <p class="text-gray-400 mb-4">the ultimate volleyball script for Spiked.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-purple-500 font-semibold">Premium</span>
+                        <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Updated</span>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=yzheEsqgt-I&t=3s" target="_blank" class="watch-btn w-full">
+                        <i class="fas fa-play"></i>
+                        Watch Showcase
+                    </a>
+                </div>
+                <div class="glass-effect p-8 rounded-xl card-hover tilt-card reveal">
+                    <img src="https://i.imgur.com/rYzdFQv.jpeg" alt="Volleyball 4.2 Script" class="w-full h-48 rounded-lg mb-6 object-cover floating-small">
+                    <h3 class="text-xl font-semibold mb-3">Volleyball 4.2 Script</h3>
+                    <p class="text-gray-400 mb-4">The ultimate volleyball script for volleyball 4.2.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-orange-500 font-semibold">Premium</span>
+                        <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Updated</span>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=8KSEvJYHBfw" target="_blank" class="watch-btn w-full">
+                        <i class="fas fa-play"></i>
+                        Watch Showcase
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="discord" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 reveal">Join Our <span class="text-gradient">Discord</span> 💬</h2>
+                <p class="text-xl text-gray-400 reveal">Hang out with other scripters and get help when you need it</p>
+            </div>
+            
+            <div class="glass-effect p-8 rounded-2xl mb-12 tilt-card reveal">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-6 floating">
+                            <i class="fab fa-discord text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">SushiHub Official Discord</h3>
+                        <p class="text-gray-400 text-lg mb-6">Chat with other users, get help from our team, and stay updated on new scripts. It's pretty chill.</p>
+                        <a href="#" class="btn-primary text-lg px-8 py-4 inline-flex items-center">
+                            <i class="fab fa-discord mr-3 text-xl"></i>
+                            Join Discord Server
+                        </a>
+                    </div>
+                    <div class="discord-stats">
+                        <div class="stat-card tilt-card">
+                            <div class="text-3xl font-bold text-blue-500 mb-2">1,500+</div>
+                            <div class="text-gray-400">Active Members</div>
+                        </div>
+                        <div class="stat-card tilt-card">
+                            <div class="text-3xl font-bold text-green-500 mb-2">24/7</div>
+                            <div class="text-gray-400">Support Available</div>
+                        </div>
+                        <div class="stat-card tilt-card">
+                            <div class="text-3xl font-bold text-purple-500 mb-2">10+</div>
+                            <div class="text-gray-400">Daily Messages</div>
+                        </div>
+                        <div class="stat-card tilt-card">
+                            <div class="text-3xl font-bold text-orange-500 mb-2">5+</div>
+                            <div class="text-gray-400">Staff Members</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-effect p-6 rounded-xl text-center card-hover tilt-card reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4 floating-small">
+                        <i class="fas fa-headset text-2xl text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3">Quick Help</h4>
+                    <p class="text-gray-400">Stuck on something? Our team usually responds in minutes, not hours.</p>
+                </div>
+                <div class="glass-effect p-6 rounded-xl text-center card-hover tilt-card reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4 floating-small">
+                        <i class="fas fa-bell text-2xl text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3">Latest Updates</h4>
+                    <p class="text-gray-400">Get notified when we drop new scripts or fix existing ones.</p>
+                </div>
+                <div class="glass-effect p-6 rounded-xl text-center card-hover tilt-card reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4 floating-small">
+                        <i class="fas fa-users text-2xl text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3">Cool Community</h4>
+                    <p class="text-gray-400">Share clips, trade tips, and vibe with other scripters who get it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="glass-effect p-8 rounded-2xl tilt-card reveal">
+                <img src="https://i.imgur.com/joqwEBU.png" alt="Sushi Profile Picture" class="w-20 h-20 rounded-full mx-auto mb-6 floating object-cover">
+                <h2 class="text-3xl font-bold mb-4">Made with ❤️ by</h2>
+                <h3 class="text-4xl font-bold text-gradient mb-4">Sushi</h3>
+                <p class="text-xl text-gray-400 mb-6">The guy who built this whole thing</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <div class="flex items-center space-x-3 glass-effect px-6 py-3 rounded-full">
+                        <i class="fab fa-discord text-blue-500 text-xl"></i>
+                        <span class="font-semibold">@sushijimas</span>
+                    </div>
+                    <div class="flex items-center space-x-3 glass-effect px-6 py-3 rounded-full">
+                        <i class="fas fa-code text-green-500 text-xl"></i>
+                        <span class="font-semibold">Script Developer</span>
+                    </div>
+                </div>
+                <div class="mt-8 pt-6 border-t border-gray-700">
+                    <p class="text-gray-400">Shoutout to everyone in the community who helped make SushiHub what it is today!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-12 px-4 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 reveal">
+                <div class="col-span-2">
+                    <div class="text-2xl font-bold text-blue-500 mb-4">SushiHub</div>
+                    <p class="text-gray-400 mb-4">A script hub that actually works. No keys, no drama, just scripts that do what they're supposed to.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors tilt-card">
+                            <i class="fab fa-discord text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors tilt-card">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors tilt-card">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#executors" class="text-gray-400 hover:text-white transition-colors">Executors</a></li>
+                        <li><a href="#games" class="text-gray-400 hover:text-white transition-colors">Games</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Discord Server</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Report Issues</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 SushiHub. Built by scripters, for scripters. Made with ❤️ and way too much coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
